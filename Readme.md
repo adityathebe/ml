@@ -1,7 +1,10 @@
 # Mini Machine Learning Projects
 
-- [x] [Linear Regression with Tensorflow.js](https://adityathebe.github.io/ml/regression/)
-- [ ] Polynomial Regression
-- [x] [Iris Flower Classification with Tensorflow.js](https://adityathebe.github.io/ml/iris/)
-- [x] [Image Recognition with OpenCV (Python)](https://github.com/adityathebe/ml/face-recognition-opencv)
-- [ ] Image classification
+### Tensorflow.js
+
+- [x] [Linear Regression](https://adityathebe.github.io/ml/linear-regression/)
+- [x] [Polynomial Regression](https://adityathebe.github.io/ml/polynomial-regression/)
+- [x] [Iris Flower Classification](https://adityathebe.github.io/ml/iris/)
+
+### OpenCV
+- [x] [Image Recognition (Python)](https://github.com/adityathebe/ml/tree/master/face-recognition-opencv)

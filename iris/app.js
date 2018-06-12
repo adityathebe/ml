@@ -28,13 +28,14 @@ model.compile({
     loss: 'meanSquaredError'
 });
 
+let loss = 100;
 async function train() {
     for (let i = 0; i < ITER; i++) {
         let response = await model.fit(trainX, trainY, {
             shuffle: true,
             epochs: EPOCH
         });
-        console.log(response.history.loss[0])
+        loss = response.history.loss[0];
     }
 }
 
@@ -52,4 +53,17 @@ async function main() {
     output.print();
 }
 
-main();
+// main();
+
+let btn;
+function setup() {
+    createCanvas(800, 400);
+    btn = createButton("Train")
+}
+
+function draw() {
+    background(51);
+    fill(255);
+    text(loss, width / 2, height / 2);
+    btn.mousePressed(() => { main() })
+}
